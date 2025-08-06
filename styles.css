@@ -9,6 +9,8 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+    overflow-x: hidden;
+
 }
 
 .main-header {
@@ -107,7 +109,6 @@ html {
   z-index: 3;
   text-align: center;
   color: white;
-  padding: 1rem 2rem;
   border-radius: 8px;
 }
 
@@ -120,10 +121,12 @@ html {
 
 .hero-text p {
   width: 100vw;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
-  color: var(--bluePastel);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: lightblue;
+  border: solid;
+  padding: 2vw 5vw;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -190,41 +193,142 @@ html {
   text-align: center;
 }
 
-/* ...REEL... */
-.reelBrands {
-  width: 100%;
-  overflow: hidden;
-  background: #fff;
-  height: 20vw; /* Adjust height as needed */
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  margin-top: 30px;
+.refaccionamiento {
+  padding: 4vw;
+  background-color: white;
+  margin: 5vw 0;
+  text-align: center;
 }
 
+.refaccionamiento h2 {
+  font-family: "Inter", sans-serif;
+  margin: 3vw 0;
+  color: #343434;
+  background-color: var(--blueLight);
+  border-radius: 10px;
+  padding: 2vw;}
+
+.refaccionamiento p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  margin: 2vw auto;
+  width: 80%;
+padding-inline: 2vw;
+
+  border-left: solid var(--blue);
+  border-right: solid var(--blue);
+}
+
+.equiposCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2vw;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.equiposCards .card {
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 1vw;
+  color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1vw;
+  border-bottom: 1vw dotted #fff;
+  padding-bottom: 2vw;
+}
+.card li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 3vw;
+  list-style: none;
+}
+
+.card1 {
+  background-color: #122534;
+}
+.card2 {
+  background-color: #1c5150;
+}
+
+.card3 {
+  background-color: #105167;
+}
+
+.card4 {
+  background-color: #2e1d42;
+}
+.refaccionamiento h3 {
+  font-family: "Roboto", sans-serif;
+
+
+}
+
+.marcas{
+  
+  border-left: solid var(--blue);
+  border-right: solid var(--blue);
+    margin-top: 10vw;
+  margin-inline:auto ;
+    width: 50vw;
+
+}
+
+/* ...REEL... */
+.reelBrands, .reelBrands-rtl {
+  width: 100%;
+  overflow: hidden;
+  height: 30vw; 
+  display: flex;
+  align-items: center;
+}
+.reel-track-rtl {
+    margin-top: 0;
+  display: flex;
+  width: max-content;
+  animation: reel-scroll-rtl 15s linear infinite ;
+}
+
+@keyframes reel-scroll-rtl {
+  0% {
+    transform: translateX(-100%);
+  }
+  95% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .reel-track {
+  margin-top: 0;
   display: flex;
   width: max-content;
   animation: reel-scroll 15s linear infinite;
 }
 
 .brand-logo {
-  height: 15vw;
-  margin: 0 30px;
+  height: 40vw;
+  margin: 0 5vw;
   object-fit: contain;
   filter: grayscale(1);
   transition: filter 0.3s;
 }
 
 .eatonBrand {
-  margin: auto;
-  height: 5vw;
+  margin-inline: 5vw;
+  margin-top: 17vw;
+
+  height: 9vw;
   filter: grayscale(1);
 }
 
 .fanucBrand {
-  padding-top: 5vw;
+  margin-top: 17vw;
   height: 5vw;
   filter: grayscale(1);
 }
@@ -237,10 +341,222 @@ html {
     transform: translateX(0);
   }
   95% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0);
   }
 }
-/* ...existing code... */
+
+.servicios {
+  padding: 4vw;
+  background-color: var(--blueLight);
+  margin: 5vw 0;
+  text-align: center;
+}
+
+.serviciosParag {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  margin: 2vw auto;
+  width: 80%;
+  color: #343434;
+padding-inline: 2vw;
+  border-left: solid lightblue;
+  border-right: solid lightblue;
+}
+
+.servicios h3 {
+  font-family: "Open Sans", sans-serif;
+
+  margin-top: 10vw;
+  margin-bottom: 0;
+  color: #343434;
+}
+.servicios article,
+.servicios h2 {
+  margin: 2vw auto;
+  font-family: "Inter", sans-serif;
+
+  padding: 2vw;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.servicios img {
+  width: 50vw;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.servicios article p {
+  display: flex;
+  align-items: center;
+  height: 45vw;
+  font-size: 1rem;
+border-top: double var(--blue) .8vw;  
+border-bottom: double var(--blue) .85vw;
+padding-inline: 2vw;
+}
+
+
+.contactanos {
+  padding: 4vw;
+  margin: 5vw 0;
+  text-align: center;
+}
+
+.contactanos h2 {
+  font-family: "Inter", sans-serif;
+  margin: 3vw 0;
+  color: #343434;
+  background-color: var(--blueLight);
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+.contactanos p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  margin: 2vw auto;
+  width: 80%;
+  color: #343434;
+  padding-inline: 2vw;
+  border-left: solid var(--blue);
+  border-right: solid var(--blue);
+}
+
+.contactanos article{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4vw;
+  background-color: var(--blue);
+  border-radius: 10px;
+
+}
+
+.contactanos a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 1vw;
+  animation: pulseContact 4s infinite linear;
+}
+
+/* Pulse keyframes */
+@keyframes pulseContact {
+  0% {
+    transform: translateX(0);
+    text-shadow: 0 0 0 #4eb3ff;
+  }
+  50% {
+    transform: translateY(1vw);
+    text-shadow: 0 0 12px #4eb3ff;
+  }
+  100% {
+    transform: translateX(0);
+    text-shadow: 0 0 0 #4eb3ff;
+  }
+}
+
+/* Wave effect: delay for each link */
+.contactanos a:nth-child(1) {
+  animation-delay: 0s;
+}
+.contactanos a:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.contactanos a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.contactanos a:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.contactForm{
+ border-left:solid var(--blue) ;
+  border-right: solid var(--blue);
+  padding: 2vw 5vw;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: white;
+border-radius: 0% 0% 3% 3%;
+}
+.contactForm h2 {
+  font-family: "Inter", sans-serif;
+  margin: 3vw 0;
+  font-size: 1.3rem;
+  color: #343434;
+  background-color: var(--blueLight);
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+.contactForm input,
+.contactForm textarea{
+  width: 100%;
+  padding: 1vw;
+  font-family: "Open Sans", sans-serif;
+  margin: 1vw 0;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactForm label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5vw;
+  display: block;
+}
+.contactForm button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 1vw 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 40%;
+  border-radius: 5px;
+}
+
+.banner {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 10vw;
+  width: 100%;
+background-image: url("images/banner.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 2vw;
+  height: 75vw;
+
+  color: white;
+}
+
+footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 2vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer span {
+  display: block;
+  margin-top: 1vw;
+  font-size: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
