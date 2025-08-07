@@ -9,8 +9,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-    overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 .main-header {
@@ -27,6 +26,7 @@ html {
   padding: 0 2vw;
   box-sizing: border-box;
   backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.197);
 }
 
 .logo-container {
@@ -122,19 +122,19 @@ html {
 .hero-text p {
   width: 100vw;
   font-size: 1.3rem;
-  margin: 0;
+  margin-bottom: 5vw;
   color: lightblue;
   border: solid;
   padding: 2vw 5vw;
+  background-color: rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 5px rgb(0, 0, 0);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* Estilo base del contenedor 3D */
 .spin-letter {
   display: inline-block;
-  animation: flip 3.2s linear infinite;
+  animation: clorblue 3.2s linear infinite;
   perspective: 600px;
   color: var(--blue);
 }
@@ -154,21 +154,6 @@ html {
   }
   100% {
     color: var(--blue);
-  }
-}
-
-/* Animación de giro en el eje Y */
-@keyframes flip {
-  0% {
-    transform: rotateY(0deg);
-  }
-  80% {
-    transform: rotateY(180deg);
-    color: white;
-  }
-
-  100% {
-    transform: rotateY(360deg);
   }
 }
 
@@ -205,14 +190,15 @@ html {
   color: #343434;
   background-color: var(--blueLight);
   border-radius: 10px;
-  padding: 2vw;}
+  padding: 2vw;
+}
 
 .refaccionamiento p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   margin: 2vw auto;
   width: 80%;
-padding-inline: 2vw;
+  padding-inline: 2vw;
 
   border-left: solid var(--blue);
   border-right: solid var(--blue);
@@ -263,33 +249,30 @@ padding-inline: 2vw;
 }
 .refaccionamiento h3 {
   font-family: "Roboto", sans-serif;
-
-
 }
 
-.marcas{
-  
+.marcas {
   border-left: solid var(--blue);
   border-right: solid var(--blue);
-    margin-top: 10vw;
-  margin-inline:auto ;
-    width: 50vw;
-
+  margin-top: 8vw;
+  margin-inline: auto;
+  width: 50vw;
 }
 
 /* ...REEL... */
-.reelBrands, .reelBrands-rtl {
+.reelBrands,
+.reelBrands-rtl {
   width: 100%;
   overflow: hidden;
-  height: 30vw; 
+  height: 30vw;
   display: flex;
   align-items: center;
 }
 .reel-track-rtl {
-    margin-top: 0;
+  margin-top: 0;
   display: flex;
   width: max-content;
-  animation: reel-scroll-rtl 15s linear infinite ;
+  animation: reel-scroll-rtl 15s linear infinite;
 }
 
 @keyframes reel-scroll-rtl {
@@ -360,7 +343,7 @@ padding-inline: 2vw;
   margin: 2vw auto;
   width: 80%;
   color: #343434;
-padding-inline: 2vw;
+  padding-inline: 2vw;
   border-left: solid lightblue;
   border-right: solid lightblue;
 }
@@ -397,11 +380,10 @@ padding-inline: 2vw;
   align-items: center;
   height: 45vw;
   font-size: 1rem;
-border-top: double var(--blue) .8vw;  
-border-bottom: double var(--blue) .85vw;
-padding-inline: 2vw;
+  border-top: double var(--blue) 0.8vw;
+  border-bottom: double var(--blue) 0.85vw;
+  padding-inline: 2vw;
 }
-
 
 .contactanos {
   padding: 4vw;
@@ -429,14 +411,13 @@ padding-inline: 2vw;
   border-right: solid var(--blue);
 }
 
-.contactanos article{
+.contactanos article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 4vw;
   background-color: var(--blue);
   border-radius: 10px;
-
 }
 
 .contactanos a {
@@ -477,14 +458,14 @@ padding-inline: 2vw;
   animation-delay: 0.8s;
 }
 
-.contactForm{
- border-left:solid var(--blue) ;
+.contactForm {
+  border-left: solid var(--blue);
   border-right: solid var(--blue);
   padding: 2vw 5vw;
   width: 70vw;
   margin: 0 auto;
   background-color: white;
-border-radius: 0% 0% 3% 3%;
+  border-radius: 0% 0% 3% 3%;
 }
 .contactForm h2 {
   font-family: "Inter", sans-serif;
@@ -498,7 +479,7 @@ border-radius: 0% 0% 3% 3%;
 }
 
 .contactForm input,
-.contactForm textarea{
+.contactForm textarea {
   width: 100%;
   padding: 1vw;
   font-family: "Open Sans", sans-serif;
@@ -530,7 +511,7 @@ border-radius: 0% 0% 3% 3%;
   text-align: center;
   margin-top: 10vw;
   width: 100%;
-background-image: url("images/banner.webp");
+  background-image: url("images/banner.webp");
   background-size: cover;
   background-position: center;
   padding: 2vw;
@@ -551,7 +532,7 @@ footer span {
   display: block;
   margin-top: 1vw;
   font-size: 0.9rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer img {
@@ -567,13 +548,12 @@ footer span a {
   transition: color 0.3s;
 }
 
-
 @media only screen and (min-width: 600px) {
-.main-nav a {
+  .main-nav a {
     font-size: 2rem;
   }
 
-  .logo-container img{
+  .logo-container img {
     width: 20vw;
   }
   .hero-text h1 {
@@ -587,15 +567,13 @@ footer span a {
     margin-top: 20vw;
   }
 
-  .refaccionamiento h2{
+  .refaccionamiento h2 {
     font-size: 2.5rem;
   }
 
-.refaccionamiento p{
+  .refaccionamiento p {
     font-size: 1.5rem;
   }
-
-
 
   .equiposCards .card h3 {
     font-size: 1.9rem;
@@ -606,19 +584,18 @@ footer span a {
   }
 
   .marcas {
-  font-size: 3rem;
-  border-left: solid var(--blue) 1vw;
-  border-right: solid var(--blue) 1vw;
+    font-size: 3rem;
+    border-left: solid var(--blue) 1vw;
+    border-right: solid var(--blue) 1vw;
   }
 
-
-  
   .brand-logo {
     height: 30vw;
     margin: 0 3vw;
   }
 
-   .fanucBrand, .eatonBrand {
+  .fanucBrand,
+  .eatonBrand {
     width: 30vw;
   }
 
@@ -628,19 +605,17 @@ footer span a {
 
   .serviciosParag {
     font-size: 2rem;
-      border-left: solid lightblue 1vw;
-      border-right: solid lightblue 1vw;
-
+    border-left: solid lightblue 1vw;
+    border-right: solid lightblue 1vw;
   }
   .servicios h3 {
     font-size: 2.5rem;
   }
 
-
   .servicios article p {
     font-size: 1.9rem;
     height: 40vw;
-    border-top: double var(--blue) 1vw;  
+    border-top: double var(--blue) 1vw;
     border-bottom: double var(--blue) 1.5vw;
   }
 
@@ -655,7 +630,7 @@ footer span a {
     border-right: solid var(--blue) 1vw;
   }
 
-  .contactanos article i{
+  .contactanos article i {
     font-size: 2.9rem;
   }
 
@@ -664,7 +639,7 @@ footer span a {
     border-right: solid var(--blue) 1vw;
   }
 
-  .contactForm h2{
+  .contactForm h2 {
     font-size: 2.5rem;
   }
 
@@ -693,7 +668,121 @@ footer span a {
     font-size: 1.5rem;
   }
 
-  footer span{
+  footer span {
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (min-width: 900px) {
+  .main-nav a {
+    font-size: 1.2rem;
+  }
+
+  .main-header {
+    height: 5vw;
+    justify-content: space-between;
+  }
+  .logo-container img {
+    width: 8vw;
+  }
+
+  .product {
+    min-width: 100vw;
+    max-height: 20vw;
+  }
+
+  .hero-text {
+    top: 60%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.9rem;
+    margin: 0;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .product-slider {
+    margin-top: 6vw;
+  }
+
+  .refaccionamiento h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .refaccionamiento p {
+    font-size: 1.2rem;
+    padding-inline: 0vw;
+    border-left: solid var(--blue) 0.5vw;
+    border-right: solid var(--blue) 0.5vw;
+  }
+  .equiposCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .equiposCards .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .equiposCards .card li {
+    font-size: 1.2rem;
+    margin-top: 1vw;
+  }
+
+  .marcas {
+    font-size: 2rem;
+    padding-inline: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 3vw;
+    border-left: solid var(--blue) 0.5vw;
+    border-right: solid var(--blue) 0.5vw;
+  }
+
+  .brand-logo {
+    height: 10vw;
+    margin-inline: 8vw;
+  }
+
+  .reel-track,
+  .reel-track-rtl {
+    height: 10vw;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .fanucBrand,
+  .eatonBrand {
+    width: 10vw;
+  }
+
+  .servicios h2 {
+    font-size: 2rem;
+  }
+
+  .servicios p {
+    font-size: 1.5rem;
+    border-top: double lightblue 0.5vw;
+    border-bottom: double lightblue 0.5vw;
+  }
+
+  .servicios article{
+    width: fit-content;
+  }
+
+   .servicios article img{
+    width: 25vw;
+
+   }
+
+   .servicios article p{
+    font-size: 1.4rem;
+    height: 20vw;
+   }
 }
