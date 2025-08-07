@@ -151,7 +151,6 @@ html {
   }
   50% {
     color: white;
-    font-size: 3rem;
   }
   100% {
     color: var(--blue);
@@ -491,6 +490,7 @@ border-radius: 0% 0% 3% 3%;
   font-family: "Inter", sans-serif;
   margin: 3vw 0;
   font-size: 1.3rem;
+  text-align: center;
   color: #343434;
   background-color: var(--blueLight);
   border-radius: 10px;
@@ -559,4 +559,141 @@ footer img {
   height: 5vw;
   border-radius: 50%;
   margin-left: 1vw;
+}
+
+footer span a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+@media only screen and (min-width: 600px) {
+.main-nav a {
+    font-size: 2rem;
+  }
+
+  .logo-container img{
+    width: 20vw;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .hero-text p {
+    font-size: 2rem;
+    padding: 2vw 5vw;
+  }
+  .product-slider {
+    margin-top: 20vw;
+  }
+
+  .refaccionamiento h2{
+    font-size: 2.5rem;
+  }
+
+.refaccionamiento p{
+    font-size: 1.5rem;
+  }
+
+
+
+  .equiposCards .card h3 {
+    font-size: 1.9rem;
+  }
+
+  .equiposCards .card li {
+    font-size: 1.5rem;
+  }
+
+  .marcas {
+  font-size: 3rem;
+  border-left: solid var(--blue) 1vw;
+  border-right: solid var(--blue) 1vw;
+  }
+
+
+  
+  .brand-logo {
+    height: 30vw;
+    margin: 0 3vw;
+  }
+
+   .fanucBrand, .eatonBrand {
+    width: 30vw;
+  }
+
+  .servicios h2 {
+    font-size: 2.5rem;
+  }
+
+  .serviciosParag {
+    font-size: 2rem;
+      border-left: solid lightblue 1vw;
+      border-right: solid lightblue 1vw;
+
+  }
+  .servicios h3 {
+    font-size: 2.5rem;
+  }
+
+
+  .servicios article p {
+    font-size: 1.9rem;
+    height: 40vw;
+    border-top: double var(--blue) 1vw;  
+    border-bottom: double var(--blue) 1.5vw;
+  }
+
+  .contactanos h2 {
+    font-size: 2.5rem;
+  }
+
+  .contactanos p {
+    font-size: 1.9rem;
+    padding-inline: 2vw;
+    border-left: solid var(--blue) 1vw;
+    border-right: solid var(--blue) 1vw;
+  }
+
+  .contactanos article i{
+    font-size: 2.9rem;
+  }
+
+  .contactForm {
+    border-left: solid var(--blue) 1vw;
+    border-right: solid var(--blue) 1vw;
+  }
+
+  .contactForm h2{
+    font-size: 2.5rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 1.5rem;
+    padding: 1.5vw;
+  }
+
+  .contactForm label {
+    font-size: 1.5rem;
+  }
+
+  .contactForm button {
+    font-size: 1.5rem;
+    padding: 1.5vw 3vw;
+  }
+
+  .banner {
+    font-size: 1.5rem;
+    padding: 3vw;
+    height: 50vw;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+
+  footer span{
+    font-size: 1.2rem;
+  }
 }
