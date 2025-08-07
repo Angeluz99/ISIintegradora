@@ -237,12 +237,12 @@
           <img src="images/tablero.webp" alt="tablero" />
         </div>
 
-        <p>Armado y programación de tableros industriales.</p>
+        <div class="iconP"><i class="bi bi-speedometer2"></i><p>Armado y programación de tableros industriales.</p></div>
       </article>
 
       <h3>Programación PLC-HMI</h3>
       <article>
-        <p>Nos especializamos en automatizar lineas de producción.</p>
+         <div class="iconP"><i class="bi bi-tv"></i> <p>Nos especializamos en automatizar lineas de producción.</p> </div>
         <div class="tableroImg">
           <img src="images/bg-bomba.webp" alt="tablero" />
         </div>
@@ -254,18 +254,18 @@
           <img src="images/cuarto.webp" alt="cuartolimpio" />
         </div>
 
-        <p>
+       <div class="iconP"><i class="bi bi-box2"></i> <p>
           Diseño y construcción de cuartos limpios y de
           ambiente controlado.
-        </p>
+        </p></div>
       </article>
 
       <h3>Pisos Industriales</h3>
       <article>
-        <p>
+        <div class="iconP"><i class="bi bi-layers"></i><p>
           Planeación y construcción de pisos industriales de alta resistencia y
           durabilidad.
-        </p>
+        </p></div>
         <div class="pisosImg"><img src="images/pisos.webp" alt="pisos" /></div>
       </article>
     </section>
@@ -284,30 +284,52 @@
     </section>
 
     <section class="contactForm">
-      <h2>Formulario de Contacto</h2>
-      <form action="#" method="post">
+          <h2>Formulario de Contacto</h2>
+          <form
+          id="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+         <input
+            type="hidden" 
+            name="access_key"
+            value="fc32a3aa-2cdf-457a-8284-616358afd903"
+          />
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required />
 
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required />
-
+        <label for="subject">Asunto:</label>
+        <select name="subject" required>
+        <option value="Mensaje desde el website: Información sobre Refacciones">Información sobre Refacciones</option>
+        <option value="Mensaje desde el website: Información sobre Servicios">Información sobre Servicios</option></select>
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://integradorasi.com/"
+          />
         <button type="submit">Enviar</button>
       </form>
     </section>
 
     <div class="banner">
          <p>
-          Integradora de soluciones para mantenimiento y optimización de
+          Integradora de Servicios Indsutrialies. Soluciones para mantenimiento y optimización de
           procesos industriales en todo tipo de industria manufacturera.
         </p>
     </div>
 
     <footer>
-      <p>2025 ISI Integradora. Todos los derechos reservados.</p>
+      <p>2025 ISI Integradora de Servicios Indsutrialies GDL. Todos los derechos reservados.</p>
       <span
         >Developed by:
         <a

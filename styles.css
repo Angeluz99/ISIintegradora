@@ -375,13 +375,27 @@ html {
   border-radius: 8px;
 }
 
+.iconP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: double var(--blue) 0.8vw;
+  border-bottom: double var(--blue) 0.85vw;
+    height: 45vw;
+
+}
+
+.iconP i {
+  font-size: 2rem;
+  color: var(--blue);
+  margin: 0;
+}
+
 .servicios article p {
   display: flex;
   align-items: center;
-  height: 45vw;
-  font-size: 1rem;
-  border-top: double var(--blue) 0.8vw;
-  border-bottom: double var(--blue) 0.85vw;
+  font-size: .9rem;
+
   padding-inline: 2vw;
 }
 
@@ -479,7 +493,8 @@ html {
 }
 
 .contactForm input,
-.contactForm textarea {
+.contactForm textarea,
+.contactForm select {
   width: 100%;
   padding: 1vw;
   font-family: "Open Sans", sans-serif;
@@ -487,6 +502,12 @@ html {
   border: 1px solid var(--blue);
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.contactForm select option {
+  font-family: "Open Sans", sans-serif;
+  font-size: .9rem;
+  
 }
 
 .contactForm label {
@@ -612,11 +633,20 @@ footer span a {
     font-size: 2.5rem;
   }
 
-  .servicios article p {
-    font-size: 1.9rem;
-    height: 40vw;
+  .iconP{
+      height: 45vw;
     border-top: double var(--blue) 1vw;
     border-bottom: double var(--blue) 1.5vw;
+  }
+
+  .iconP i{
+    font-size: 3rem;
+  
+  }
+
+  .servicios article p {
+    font-size: 1.9rem;
+  
   }
 
   .contactanos h2 {
@@ -766,14 +796,19 @@ footer span a {
     font-size: 2rem;
   }
 
-  .servicios p {
+  .serviciosParag{
     font-size: 1.5rem;
-    border-top: double lightblue 0.5vw;
-    border-bottom: double lightblue 0.5vw;
+    border-left: solid lightblue 0.5vw ;
+    border-right: solid lightblue 0.5vw;
+   
   }
 
+  .servicios h3 {
+    font-size: 1.8rem;
+  }
   .servicios article{
     width: fit-content;
+    margin-top: 0;
   }
 
    .servicios article img{
@@ -781,8 +816,66 @@ footer span a {
 
    }
 
+   .iconP{
+    height: 20vw;
+
+  
+   }
+
+    .iconP i{
+    font-size: 4rem;}
+
    .servicios article p{
     font-size: 1.4rem;
-    height: 20vw;
    }
+
+   .contactanos h2 {
+    font-size: 2rem;}
+
+    .contactanos p {
+    font-size: 1.5rem;
+    padding-inline: 0vw;
+    border-left: solid var(--blue) 0.5vw; 
+    border-right: solid var(--blue) 0.5vw;
+  }
+
+   .contactForm {
+    width: 60vw;
+    padding: 2vw 4vw;   
+    border-left: solid var(--blue) 0.5vw ;
+    border-right: solid var(--blue) 0.5vw;
+}
+
+.contactForm h2 {
+    font-size: 1.8rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 1.2rem;
+    padding: 1vw;
+  }
+
+  .contactForm label {
+    font-size: 1.2rem;
+  }
+
+  .contactForm button {
+    font-size: 1.2rem;
+    padding: 1vw 2vw;
+  }
+
+  .banner {
+    font-size: 1.2rem;
+    padding: 2vw;
+    height: 30vw;
+    background-size: auto;
+  } 
+
+  footer span img{
+    width: 3vw;
+    height: 3vw;
+  }
+
+
 }
