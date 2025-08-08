@@ -576,6 +576,19 @@ footer span a {
   transition: color 0.3s;
 }
 
+.copy-icon {
+  font-size: 1em;      /* Adjust as needed, try 0.9em or 0.8em for even smaller */
+  margin-left: 0;
+
+}
+
+.copied-msg {
+  color: green;
+  font-size: 1em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
 @media only screen and (min-width: 600px) {
   .main-nav a {
     font-size: 2rem;
@@ -844,6 +857,25 @@ footer span a {
     padding-inline: 0vw;
     border-left: solid var(--blue) 0.5vw;
     border-right: solid var(--blue) 0.5vw;
+  }
+
+    .copy-icon {
+    display: block !important;
+     font-size: 1rem !important; /* or 1rem or 0.9rem as you prefer */
+  cursor: pointer;
+  display: inline;
+  color: whitesmoke;
+  margin-left: -20vw;
+  }
+.contactanos i:hover {
+    color: #4eb3ff;
+    scale: 1.1;
+  }
+  .copied-msg {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* or 1rem or 0.9rem as you prefer */
+    margin-left: -22vw;
   }
 
   .contactForm {
