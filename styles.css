@@ -306,14 +306,23 @@ html {
   margin-top: 17vw;
 
   height: 9vw;
-  filter: grayscale(1);
 }
 
 .fanucBrand {
   margin-top: 17vw;
   height: 5vw;
-  filter: grayscale(1);
 }
+
+.abbBrand {
+  height: 17vw;
+  margin-top: 12vw;
+}
+
+.deltaBrand {
+  height: 30vw;
+  margin-top: 4vw;
+}
+
 .brand-logo:hover {
   filter: grayscale(0);
 }
@@ -381,8 +390,7 @@ html {
   justify-content: center;
   border-top: double var(--blue) 0.8vw;
   border-bottom: double var(--blue) 0.85vw;
-    height: 45vw;
-
+  height: 45vw;
 }
 
 .iconP i {
@@ -394,7 +402,7 @@ html {
 .servicios article p {
   display: flex;
   align-items: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   padding-inline: 2vw;
 }
@@ -506,8 +514,7 @@ html {
 
 .contactForm select option {
   font-family: "Open Sans", sans-serif;
-  font-size: .9rem;
-  
+  font-size: 0.9rem;
 }
 
 .contactForm label {
@@ -633,20 +640,18 @@ footer span a {
     font-size: 2.5rem;
   }
 
-  .iconP{
-      height: 45vw;
+  .iconP {
+    height: 45vw;
     border-top: double var(--blue) 1vw;
     border-bottom: double var(--blue) 1.5vw;
   }
 
-  .iconP i{
+  .iconP i {
     font-size: 3rem;
-  
   }
 
   .servicios article p {
     font-size: 1.9rem;
-  
   }
 
   .contactanos h2 {
@@ -780,11 +785,15 @@ footer span a {
     margin-inline: 8vw;
   }
 
+  .brand-logo :hover{
+    filter: grayscale(0);
+  }
   .reel-track,
   .reel-track-rtl {
     height: 10vw;
     margin: 0;
     margin-bottom: 0;
+    animation-duration: 20s;
   }
 
   .fanucBrand,
@@ -796,57 +805,55 @@ footer span a {
     font-size: 2rem;
   }
 
-  .serviciosParag{
+  .serviciosParag {
     font-size: 1.5rem;
-    border-left: solid lightblue 0.5vw ;
+    border-left: solid lightblue 0.5vw;
     border-right: solid lightblue 0.5vw;
-   
   }
 
   .servicios h3 {
     font-size: 1.8rem;
   }
-  .servicios article{
+  .servicios article {
     width: fit-content;
     margin-top: 0;
   }
 
-   .servicios article img{
+  .servicios article img {
     width: 25vw;
+  }
 
-   }
-
-   .iconP{
+  .iconP {
     height: 20vw;
+  }
 
-  
-   }
+  .iconP i {
+    font-size: 4rem;
+  }
 
-    .iconP i{
-    font-size: 4rem;}
-
-   .servicios article p{
+  .servicios article p {
     font-size: 1.4rem;
-   }
+  }
 
-   .contactanos h2 {
-    font-size: 2rem;}
+  .contactanos h2 {
+    font-size: 2rem;
+  }
 
-    .contactanos p {
+  .contactanos p {
     font-size: 1.5rem;
     padding-inline: 0vw;
-    border-left: solid var(--blue) 0.5vw; 
+    border-left: solid var(--blue) 0.5vw;
     border-right: solid var(--blue) 0.5vw;
   }
 
-   .contactForm {
+  .contactForm {
     width: 60vw;
-    padding: 2vw 4vw;   
-    border-left: solid var(--blue) 0.5vw ;
+    padding: 2vw 4vw;
+    border-left: solid var(--blue) 0.5vw;
     border-right: solid var(--blue) 0.5vw;
-}
+  }
 
-.contactForm h2 {
+  .contactForm h2 {
     font-size: 1.8rem;
   }
 
@@ -870,12 +877,10 @@ footer span a {
     padding: 2vw;
     height: 30vw;
     background-size: auto;
-  } 
+  }
 
-  footer span img{
+  footer span img {
     width: 3vw;
     height: 3vw;
   }
-
-
 }
