@@ -10,6 +10,30 @@ html {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 2000;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 2.5rem;
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  background: #25d366;
+  transform: scale(1.08);
 }
 
 .main-header {
@@ -579,6 +603,9 @@ footer span a {
 .copy-icon {
   font-size: 1em;      /* Adjust as needed, try 0.9em or 0.8em for even smaller */
   margin-left: 0;
+  display: none;
+  width: 0;
+  height: 0;
 
 }
 
